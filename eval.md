@@ -76,6 +76,7 @@ private void httpTest() {
 					httpPost.setHeader("appkey", "testAppKey");
 					String uuid_str = UUID.randomUUID().toString();
 					httpPost.setHeader("session-id", uuid_str);
+					httpPost.setHeader("device-id", "userid");
 					response = httpclient.execute(httpPost);
 					if (response != null && response.getStatusLine().getStatusCode() == 200) {
 						// file.setLastModified(System.currentTimeMillis());
