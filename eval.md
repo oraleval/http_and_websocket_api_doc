@@ -30,6 +30,10 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 * **score-coefficient**
 > 分数调整定制参数，可以对同样质量的语音调整得分高低，具体取值咨询客户经理
 
+* **device-id**
+> 设备或用户的id标识。一个客户应该保证每个用户拥有唯一的id
+
+
 #### Form Data
 
 * **text** (required)
@@ -46,7 +50,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 #### curl
 
 ```
-curl -X POST -H "session-id:`uuidgen`" -H "appkey:www"  -H "Content-Length" --form text='good' --form mode="A" --form voice=@./good.opus "http://edu.hivoice.cn:8085/eval/opus"
+curl -X POST -H "session-id:`uuidgen`" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" --form text='good' --form mode="A" --form voice=@./good.opus "http://edu.hivoice.cn:8085/eval/opus"
 ```
 #### Java
 ```
