@@ -25,7 +25,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 > app key
 
 * **session-id**
-> session id，如果需要在评测完成以后播放改该录音，则需要生成uuid
+> session id，表示该次评测的唯一表示，使用 uuid
 
 * **score-coefficient**
 > 分数调整定制参数，可以对同样质量的语音调整得分高低，具体取值咨询客户经理
