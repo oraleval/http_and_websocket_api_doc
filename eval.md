@@ -21,11 +21,13 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 
 #### HTTP header attribute
 
-* **appkey** (required)
-> app key
 
 * **session-id**
 > session id，表示该次评测的唯一表示，使用 uuid
+
+* **appkey** (required)
+> app key
+
 
 * **score-coefficient**
 > 分数调整定制参数，可以对同样质量的语音调整得分高低，具体取值咨询客户经理
