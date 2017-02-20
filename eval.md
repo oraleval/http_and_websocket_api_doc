@@ -23,17 +23,20 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 
 
 * **session-id**
-> session id，表示该次评测的唯一表示，使用 uuid
+> session id，表示该次评测的唯一表示，使用 uuid，session id 必须要在appkey前面，顺序不可颠倒
+
 
 * **appkey** (required)
 > app key
 
 
 * **score-coefficient**
-> 分数调整定制参数，可以对同样质量的语音调整得分高低，具体取值咨询客户经理
+> 分数调整定制参数，可以对同样质量的语音调整得分高低，范围是0.6~1.9，默认情况下是1.0，设置越低，打分越严格，设置系数越高，打分越松，一般小学生设置系数偏高，采取鼓励模式
+
 
 * **device-id**
-> 设备或用户的id标识。一个客户应该保证每个用户拥有唯一的id
+> 设备或用户的id标识。一个客户应该保证每个用户拥有唯一的id，建议上传，方便用户的数据上传
+
 
 
 #### Form Data
