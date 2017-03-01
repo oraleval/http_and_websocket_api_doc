@@ -102,11 +102,8 @@ private void httpTest() {
 					if (response != null && response.getStatusLine().getStatusCode() == 200) {
 						// file.setLastModified(System.currentTimeMillis());
 						String text = EntityUtils.toString(response.getEntity(), HTTP.UTF_8);
-						JSONObject jsonObject = new JSONObject(text);
-						int code = Integer.parseInt(jsonObject.getString("status"));
-						if (code == 1) {
-
-						}
+						//JSONObject jsonObject = new JSONObject(text);
+						Log.e("response",text);
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
