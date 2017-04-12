@@ -15,9 +15,9 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 #### Path Parameters
 
 * **audioFormat** (required)
-> 上传的音频格式。 16k signed 16bit pcm；或，连续的opus帧，每帧有两个字节的小端头，每个opus帧由640 bytes pcm编码得到；或窄带amr Example: ```opus```.
+> 上传的音频格式。 连续的opus帧，每帧有两个字节的小端头，每个opus帧由640 bytes pcm编码得到；或窄带amr Example: ```opus```.
 
-  > 可选值:  ```pcm``` , ```opus``` , ```amrnb``` .
+  > 可选值:  ```mp3``` , ```opus``` , ```amrnb``` .
 
 #### HTTP header attribute
 
