@@ -72,11 +72,11 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 
 #### curl
 
-```
+```bash
 curl -X POST -H "session-id:uuidgen" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" --form text='good' --form mode="A" --form voice=@./good.opus "http://edu.hivoice.cn:8085/eval/opus"
 ```
 #### Java
-```
+```java
 private void httpTest() {
 		new Thread() {
 			@Override
@@ -126,7 +126,7 @@ private void httpTest() {
 Content-Type:application/json
 ```
 #### response body
-```
+```json
 {
   "lines": [
     {
