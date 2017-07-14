@@ -40,6 +40,10 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 > 设备或用户的id标识。一个客户应该保证每个用户拥有唯一的id，建议上传，方便用户的数据上传
 
 
+* **Wrap-Create-Time**
+> 添加此请求头， 返回结果将会添加sessionId和和createTime （结构见具体返回）
+
+
 
 #### Form Data
 
