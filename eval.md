@@ -42,6 +42,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 
 * **Wrap-Create-Time**
 > 值为 ```true``` 添加此请求头， 返回结果将会添加sessionId和和createTime （结构见具体返回）
+> 注意：js解析时间精度会丢失，请将时间转字符串后再解析
 
 
 
