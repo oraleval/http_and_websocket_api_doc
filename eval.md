@@ -18,7 +18,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 > 上传的音频格式。 连续的opus帧，每帧有两个字节的小端头，每个opus帧由640 bytes pcm编码得到；或窄带amr Example: ```opus```.
 > 音频采用 8K/16K采样率 16Bit编码方式生成
 
-  > 可选值:  ```16k 32kbps mono mp3``` , ```opus``` , ```amrnb``` . 音频中不能含有tag信息，所谓Tag 信息，就是在MP3文件中加入曲名、演唱者、专集、年月、流派、注释等信息
+  > 可选值:  ```16k 32kbps mono mp3``` , ```silk（微信小程序格式）``` , ```opus``` , ```amrnb``` . 音频中不能含有tag信息，所谓Tag 信息，就是在MP3文件中加入曲名、演唱者、专集、年月、流派、注释等信息
 
 
 #### HTTP header attribute
