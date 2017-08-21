@@ -97,7 +97,7 @@ private void httpTest() {
 					json.put("text", "hello, i am nice to meet you");
 					customMultiPartEntity.addPart("mode", new StringBody("A", Charset.forName("UTF-8")));
 					customMultiPartEntity.addPart("text", new StringBody("hello, i am nice to meet you", Charset.forName("UTF-8")));
-					String file_str = "/storage/emulated/0/KAR/test12320161123T104035.pcm";
+					String file_str = "/storage/emulated/0/KAR/test12320161123T104035.mp3";
 					ContentBody fileBody = new FileBody(new File(file_str));
 					customMultiPartEntity.addPart("voice", fileBody);
 					httpPost.setEntity(customMultiPartEntity);
