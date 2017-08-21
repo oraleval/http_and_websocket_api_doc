@@ -88,7 +88,7 @@ private void httpTest() {
 			public void run() {
 				super.run();
 				HttpClient httpclient = new DefaultHttpClient();
-				HttpPost httpPost = new HttpPost("http://edu.hivoice.cn:8085/eval/pcm");
+				HttpPost httpPost = new HttpPost("http://edu.hivoice.cn:8085/eval/mp3");
 				MultipartEntity customMultiPartEntity = new MultipartEntity();
 				try {
 					HttpResponse response = null;
