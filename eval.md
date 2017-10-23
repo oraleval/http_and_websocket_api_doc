@@ -31,7 +31,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 
 
 * **session-id**
-> session id，表示该次评测的唯一表示，必须上传，使用 uuid，session id 必须要在appkey前面，顺序不可颠倒
+> session id，表示该次评测的唯一表示，必须上传，使用 uuid。
 
 
 * **appkey** (required)
