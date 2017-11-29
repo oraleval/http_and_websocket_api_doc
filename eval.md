@@ -58,7 +58,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 > 需要评测的文本
 
 * **mode**
-> 评测模式（包含A B C D E G H，A B D H 是常用模式）
+> 评测模式（包含A B C D E G H，A B G H 是常用模式）
 
 >> A：最简单模式，结果只有单词打分没有音素信息
 
