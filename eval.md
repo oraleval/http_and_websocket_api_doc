@@ -25,6 +25,8 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 > 音频采用 8K/16K采样率 16Bit编码方式生成
 
   > 可选值:  ```mp3``` , ```silk（微信小程序格式）``` , ```opus``` , ```amrnb``` . 音频中不能含有tag信息，所谓Tag 信息，就是在MP3文件中加入曲名、演唱者、专集、年月、流派、注释等信息，**不支持双声道音频**
+  
+  > 对于mp3，一般是建议采样率设置为16K，比特率设置为32 kbps
 
 
 #### HTTP header attribute
