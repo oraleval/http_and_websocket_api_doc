@@ -134,6 +134,7 @@ private void httpTest() {
 ```
 200
 ```
+错误码参照：<a href=https://github.com/oraleval/ErrorCodeList/wiki/HomePage>错误码说明</a>
 以下Json字段的含义请查找<a href=https://github.com/oraleval/FAQ-Docs/blob/master/Json%20Description.md>Json字段说明</a>
 #### response headers
 ```
