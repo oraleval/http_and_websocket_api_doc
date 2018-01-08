@@ -1,24 +1,24 @@
 # 云知声口语评测服务HTTP API文档
 
-* [HTTP备份流程](#backup)
-* [HTTP接口调用流程](#process)
+* [1、HTTP备份流程](#backup)
+* [2、HTTP接口调用流程](#process)
 
 
-## <a name="backup"></a>HTTP备份流程
+## <a name="backup"></a>1、HTTP备份流程
 
 >> <a href="https://github.com/oraleval/OralEvalSDKDocPrj/blob/master/android/%E8%AF%84%E6%B5%8Bsdk%E6%B5%81%E7%A8%8B%E5%9B%BE.pdf">HTTP备份流程图</a> 
 
-## <a name="process"></a>HTTP接口调用流程
+## <a name="process"></a>2、HTTP接口调用流程
 
 上传文本和音频，获取评测结果
 
 
 ---
-### 请求方法
+### 2.1 请求方法
 ```
 POST
 ```
-### 请求URL
+### 2.2 请求URL
 ```
 http://edu.hivoice.cn:8085/eval/{audioFormat}
  > 备注：使用的url需要跟上传的音频格式对应,例如amr格式的音频对应 http://edu.hivoice.cn:8085/eval/amrnb
@@ -28,7 +28,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
  > http://edu.hivoice.cn:8085/eval/opus
  > http://edu.hivoice.cn:8085/eval/amrnb
 ```
-#### Path Parameters
+### 2.3 Path Parameters
 
 * **audioFormat** (required)
 > 上传的音频格式。 连续的opus帧，每帧有两个字节的小端头，每个opus帧由640 bytes pcm编码得到；或窄带amr Example: ```opus```.
@@ -39,7 +39,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
   > 对于mp3，一般是建议采样率设置为16K，比特率设置为32 kbps
 
 
-#### HTTP header attribute
+### 2.4 HTTP header attribute
 
 
 * **session-id**
@@ -64,7 +64,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 
 
 
-#### Form Data
+### 2.5 Form Data
 
 * **text** (required)
 > 需要评测的文本
@@ -91,7 +91,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 
 > 语音数据，```multipart```
 
-###  Examples
+### 2.6 Examples
 
 #### curl
 
