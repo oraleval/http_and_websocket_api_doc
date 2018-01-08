@@ -1,8 +1,18 @@
-# 评测
+# 云知声口语评测服务HTTP API文档
+
+* [HTTP备份流程](#backup)
+* [HTTP接口调用流程](#process)
+
+
+## <a name="backup"></a>HTTP备份流程
+
+>> <a href="https://github.com/oraleval/OralEvalSDKDocPrj/blob/master/android/%E8%AF%84%E6%B5%8Bsdk%E6%B5%81%E7%A8%8B%E5%9B%BE.pdf">HTTP备份流程图</a> 
+
+## <a name="process"></a>HTTP接口调用流程
 
 上传文本和音频，获取评测结果
 
-## 接口详情
+
 ---
 ### 请求方法
 ```
