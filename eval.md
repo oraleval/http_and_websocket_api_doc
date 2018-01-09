@@ -6,8 +6,14 @@
 
 ## <a name="backup"></a>1、HTTP备份流程
 
->> <a href="https://github.com/oraleval/OralEvalSDKDocPrj/blob/master/android/%E8%AF%84%E6%B5%8Bsdk%E6%B5%81%E7%A8%8B%E5%9B%BE.pdf">HTTP备份流程图</a> 
+>> <a href="https://github.com/oraleval/http_api_doc/blob/master/HTTP%E5%A4%87%E4%BB%BD%E6%B5%81%E7%A8%8B.pdf">HTTP备份流程图</a> 
 
+>> 备注：服务端未设置超时时间，客户端每步的超时时间算式为：
+
+>> a.如果文本 <=10 个单词，设置为 3 秒；
+
+>> b.如果文本 >10 个单词，设置为 3 + (n-10)/5 秒；
+   
 ## <a name="process"></a>2、HTTP接口调用流程
 
 上传文本和音频，获取评测结果
