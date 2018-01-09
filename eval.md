@@ -1,10 +1,10 @@
 # 云知声口语评测服务HTTP API文档
 
-* [1、HTTP备份流程](#backup)
-* [2、HTTP接口调用流程](#process)
+* [1.HTTP备份流程](#backup)
+* [2.HTTP接口调用流程](#process)
 
 
-## <a name="backup"></a>1、HTTP备份流程
+## <a name="backup"></a>1. HTTP备份流程
 
 >> <a href="https://github.com/oraleval/http_api_doc/blob/master/HTTP%E5%A4%87%E4%BB%BD%E6%B5%81%E7%A8%8B.pdf">HTTP备份流程图</a> 
 
@@ -14,7 +14,7 @@
 
 >> b.如果文本 >10 个单词，设置为 3 + (n-10)/5 秒；
    
-## <a name="process"></a>2、HTTP接口调用流程
+## <a name="process"></a>2. HTTP接口调用流程
 
 上传文本和音频，获取评测结果
 
