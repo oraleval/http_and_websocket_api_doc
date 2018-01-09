@@ -8,11 +8,7 @@
 
 > 本文档主要描述HTTP接口的备份流程和接口调用方法，备份流程主要是用于提高评测成功率，凡是使用HTTP方式接入评测，都建议使用备份流程
 
-
-
 ## <a name="backup"></a>1. HTTP备份流程
-
->> <a href="https://github.com/oraleval/http_api_doc/blob/master/HTTP%E5%A4%87%E4%BB%BD%E6%B5%81%E7%A8%8B.pdf">HTTP备份流程图</a> 
 
 >> ![image](https://github.com/oraleval/http_api_doc/blob/master/HTTP%E8%AF%84%E6%B5%8B%E5%A4%87%E4%BB%BD%E6%B5%81%E7%A8%8B.png)
 
