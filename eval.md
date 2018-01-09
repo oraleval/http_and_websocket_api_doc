@@ -14,6 +14,8 @@
 
 >> <a href="https://github.com/oraleval/http_api_doc/blob/master/HTTP%E5%A4%87%E4%BB%BD%E6%B5%81%E7%A8%8B.pdf">HTTP备份流程图</a> 
 
+>> ![image](https://github.com/oraleval/http_api_doc/blob/master/HTTP%E8%AF%84%E6%B5%8B%E5%A4%87%E4%BB%BD%E6%B5%81%E7%A8%8B.png)
+
 >> 备注：服务端未设置超时时间，客户端每步的超时时间算式为：
 
 >> a.如果文本 <=10 个单词，设置为 3 秒；
