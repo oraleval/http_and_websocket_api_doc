@@ -74,7 +74,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 
 * **X-EngineType**(中文评测)
 > 值为：```oral.zh_CH```
-> 这个是中文评测时需要添加的请求头， **仅当使用中文评测**时添加吃请求头
+> 这个是中文评测时需要添加的请求头， **仅当使用中文评测**时添加此请求头
 
 ### 3.5 Form Data
 
