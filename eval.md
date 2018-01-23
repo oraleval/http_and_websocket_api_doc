@@ -72,12 +72,21 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 > 值为 ```true``` 添加此请求头， 返回结果将会添加sessionId和和createTime （结构见具体返回）
 > 注意：js解析时间精度会丢失，请将时间转字符串后再解析
 
-
+* **X-EngineType**(中文评测)
+> 值为：```oral.zh_CH```
+> 这个是中文评测时需要添加的请求头， **仅当使用中文评测**时添加吃请求头
 
 ### 3.5 Form Data
 
 * **text** (required)
 > 需要评测的文本
+> 中文评测 text为json格式 Language: "en/cn" 英文/中文;  
+```javascript
+{
+  “Displaytext”:”$text”,
+  ”Language”:”cn”
+}
+```
 
 * **mode**
 > 评测模式（包含A B C D E G H，A B G H 是常用模式）
