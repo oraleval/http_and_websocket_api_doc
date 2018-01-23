@@ -79,7 +79,7 @@ http://edu.hivoice.cn:8085/eval/{audioFormat}
 ### 3.5 Form Data
 
 * **text** (required)
-> 需要评测的文本
+> 需要评测的文本 **string格式**
 > 中文评测 text为json格式 Language: "en/cn" 英文/中文;  
 ```javascript
 {
