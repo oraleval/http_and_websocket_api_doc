@@ -87,8 +87,8 @@ POST
 > 中文评测，text为json格式， Language: "en/cn" 英文/中文
 ```javascript
 {
-  “DisplayText”:”$text”,
-  ”Language”:”cn”
+  "DisplayText" : "$text",
+  "Language" : "cn"
 }
 ```
 
