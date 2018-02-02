@@ -29,14 +29,17 @@
 POST
 ```
 ### 3.2 请求URL
+
 ```
-http://edu.hivoice.cn:8085/eval/{audioFormat}
- > 备注：使用的url需要跟上传的音频格式对应,例如amr格式的音频对应 http://edu.hivoice.cn:8085/eval/amrnb
- > 可选值:
- > http://edu.hivoice.cn:8085/eval/mp3
- > http://edu.hivoice.cn:8085/eval/silk
- > http://edu.hivoice.cn:8085/eval/opus
- > http://edu.hivoice.cn:8085/eval/amrnb
+英语评测 
+> http://edu.hivoice.cn:8085/eval/{audioFormat}
+
+中文评测
+> http://cn-edu.hivoice.cn:8085/eval/{audioFormat}
+ 
+ > 备 注：请求的URL需跟上传的音频格式对应，例如amr格式的音频对应英语评测地址为 http://edu.hivoice.cn:8085/eval/amrnb
+ > 可选值：mp3/silk/opus/amrnb
+
 ```
 ### 3.3 Path Parameters
 
