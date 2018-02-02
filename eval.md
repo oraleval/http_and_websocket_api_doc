@@ -31,10 +31,10 @@ POST
 ### 3.2 请求URL
 
 ```
-英语评测 
+**英语评测** 
 > http://edu.hivoice.cn:8085/eval/{audioFormat}
 
-中文评测
+**中文评测**
 > http://cn-edu.hivoice.cn:8085/eval/{audioFormat}
  
  > 备 注：请求的URL需跟上传的音频格式对应，例如amr格式的音频对应英语评测地址为 http://edu.hivoice.cn:8085/eval/amrnb
