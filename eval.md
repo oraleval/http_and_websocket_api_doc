@@ -33,9 +33,11 @@ POST
 ```
 英语评测 
 > http://edu.hivoice.cn:8085/eval/{audioFormat}
+> 端口：8085
 
 中文评测
-> http://cn-edu.hivoice.cn:8085/eval/{audioFormat}
+> http://cn-edu.hivoice.cn/eval/{audioFormat
+> 端口：80
  
   > 备 注：请求的URL需跟上传的音频格式对应，例如amr格式的音频对应英语评测地址为 http://edu.hivoice.cn:8085/eval/amrnb
   > 可选值：mp3/silk/opus/amrnb
@@ -120,7 +122,7 @@ POST
 
 ```bash
 #ZH-Oral
-curl -X POST -H "session-id:uuidgen" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" -H "X-EngineType:oral.zh_CH" --form text='{"DisplayText":"学而时习之，不亦说乎。","Language":"cn"}' --form mode="E" --form voice=@./test.opus "http://edu.hivoice.cn:8085/eval/opus"
+curl -X POST -H "session-id:uuidgen" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" -H "X-EngineType:oral.zh_CH" --form text='{"DisplayText":"学而时习之，不亦说乎。","Language":"cn"}' --form mode="B" --form voice=@./test.opus "http://cn-edu.hivoice.cn/eval/opus"
 
 #EN-Oral
 curl -X POST -H "session-id:uuidgen" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" --form text='good' --form mode="A" --form voice=@./good.opus "http://edu.hivoice.cn:8085/eval/opus"
