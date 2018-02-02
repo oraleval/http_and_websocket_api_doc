@@ -119,7 +119,12 @@ POST
 #### curl
 
 ```bash
+#ZH-Oral
+curl -X POST -H "session-id:uuidgen" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" -H "X-EngineType:oral.zh_CH" --form text='很高兴见到你。' --form mode="E" --form voice=@./test.opus "http://edu.hivoice.cn:8085/eval/opus"
+
+#EN-Oral
 curl -X POST -H "session-id:uuidgen" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" --form text='good' --form mode="A" --form voice=@./good.opus "http://edu.hivoice.cn:8085/eval/opus"
+
 ```
 #### Java
 ```Java
