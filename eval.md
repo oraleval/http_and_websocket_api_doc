@@ -55,7 +55,7 @@ POST
 ### 3.4 HTTP header attribute
 
 
-* **session-id**
+* **session-id** (required)
 > session id，表示该次评测的唯一表示，必须上传，使用 uuid。
 
 
@@ -71,11 +71,11 @@ POST
 > 设备或用户的id标识。一个客户应该保证每个用户拥有唯一的id，建议上传，方便用户的数据上传
 
 
-* **Wrap-Create-Time**
+* **Wrap-Create-Time** (required)
 > 值为 ```true``` 添加此请求头， 返回结果将会添加sessionId和和createTime （结构见具体返回）
 > 注意：js解析时间精度会丢失，请将时间转字符串后再解析
 
-* **X-EngineType**(中文评测)
+* **X-EngineType**
 > 值为：```oral.zh_CH```
 > 这个是中文评测时需要添加的请求头， **仅当使用中文评测**时添加此请求头
 
