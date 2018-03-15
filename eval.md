@@ -123,7 +123,7 @@ POST
 
 ```bash
 #ZH-Oral
-curl -X POST -H "session-id:`uuidgen`" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" -H "X-EngineType:oral.zh_CH" --form text='{"DisplayText":"学而时习之，不亦说乎。","Language":"cn"}' --form mode="B" --form voice=@'test.opus' "http://cn-edu.hivoice.cn/eval/opus"
+curl -X POST -H "session-id:`uuidgen`" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" -H "X-EngineType:oral.zh_CH" --form text="学而时习之，不亦说乎。 --form mode="B" --form voice=@'test.opus' "http://cn-edu.hivoice.cn/eval/opus"
 
 #EN-Oral
 curl -X POST -H "session-id:`uuidgen`" -H "appkey:www"  -H "Content-Length" -H "device-id:userid" --form text="good" --form mode="A" --form voice=@'good.opus' "http://edu.hivoice.cn:8085/eval/opus"
