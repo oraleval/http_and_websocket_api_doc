@@ -32,8 +32,8 @@ POST
 
 ```
 英语评测 
-> http://edu.hivoice.cn:8085/eval/{audioFormat}
-> 端口：8085
+> 普通http评测访问： http://edu.hivoice.cn:8085/eval/{audioFormat}   端口：8085
+> 小程序等https请求访问：https://edu.hivoice.cn/eval/{audioFormat}   默认端口：443
 
 中文评测
 > http://cn-edu.hivoice.cn/eval/{audioFormat}
