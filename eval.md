@@ -87,13 +87,6 @@ POST
 * **text** (required)
 > 需要评测的文本 **string格式**
 
-> 中文评测，text为json格式， Language: "en/cn" 英文/中文
-```javascript
-{
-  "DisplayText" : "$text",
-  "Language" : "cn"
-}
-```
 
 * **mode**
 > 评测模式（包含A B C D E G H，A B G H 是常用模式）
