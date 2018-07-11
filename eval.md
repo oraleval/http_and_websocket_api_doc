@@ -36,8 +36,8 @@ POST
 > 小程序等https请求访问：https://edu.hivoice.cn/eval/{audioFormat}   默认端口：443
 
 中文评测
-> http://cn-edu.hivoice.cn/eval/{audioFormat}
-> 端口：80
+> 普通http评测访问：http://cn-edu.hivoice.cn/eval/{audioFormat}   端口：80
+> 小程序等https请求访问：https://cn-edu.hivoice.cn/eval/{audioFormat}   默认端口：443
  
   > 备 注：请求的URL需跟上传的音频格式对应，例如amr格式的音频对应英语评测地址为 http://edu.hivoice.cn:8085/eval/amrnb
   > 可选值：mp3/silk/opus/amrnb
@@ -52,6 +52,8 @@ POST
   > 可选值:  ```mp3``` , ```silk（微信小程序格式）``` , ```opus``` , ```amrnb``` . 音频中不能含有tag信息，所谓Tag 信息，就是在MP3文件中加入曲名、演唱者、专集、年月、流派、注释等信息，**不支持双声道音频**
   
   > 对于mp3，一般是建议采样率设置为16K，比特率设置为32 kbps
+  
+  > 对于silk 格式，微信编译器上的生成的文件是base64编码的，不是silk格式，评测时会报错，需要使用真机生成的silk文件。
 
 
 ### 3.4 HTTP header attribute
