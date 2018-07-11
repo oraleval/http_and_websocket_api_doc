@@ -86,6 +86,8 @@ POST
 
 ### 3.5 Form Data
 
+**需要按照text、mode、voice顺序依次传入，不可乱序**
+
 * **text** (required)
 > 需要评测的文本 **string格式**
 
