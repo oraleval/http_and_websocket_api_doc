@@ -3,6 +3,7 @@
 * [1.概要](#outline)
 * [2.HTTP备份流程](#backup)
 * [3.HTTP接口调用流程](#process)
+* [4.HTTP接口拼接audio url](#audio)
 
 ## <a name="outline"></a>1. 概要
 
@@ -172,6 +173,22 @@ private void httpTest() {
 ```
 200
 ```
+
+## <a name="audio"></a>4. HTTP拼接audio url
+
+> 如果使用http协议，且想要获取用户录音结果，则可以根据响应请求结果中的header进行拼接音频url，获取音频
+
+> 一个正常的http请求，在返回结果的header中有session-id字段，例如：
+
+> **session-id →sh:1542272221203805792:02055555-f4cd-4fef-8ed8-1a2089056acf**
+
+> 其中，sh是代表地域名称region，1542272221203805792是代表createtime；02055555-f4cd-4fef-8ed8-1a2089056acf 是代表请求中传入的session-id
+
+> 最后可以根据以上三个信息拼接url，固定字段http://edu.hivoice.cn:9088/WebAudio-1.0-SNAPSHOT/audio/play/{session-id}/{createtime}/{region}
+
+> 以上示例，最后拼接的url是http://edu.hivoice.cn:9088/WebAudio-1.0-SNAPSHOT/audio/play/02055555-f4cd-4fef-8ed8-1a2089056acf/1542272221203805792/sh
+
+
 **错误码参照：**<a href=https://github.com/oraleval/ErrorCodeList/wiki/HomePage>错误码说明</a>
 
 **Json字段说明请查找：**<a href=https://github.com/oraleval/FAQ-Docs/blob/master/Json%20Description.md>Json字段说明</a>
