@@ -198,45 +198,62 @@ Content-Type:application/json
 #### response body
 ```Json
 {
+  "version": "full 1.0",
+  "score": 88.66,
+  "EvalType": "general",
   "lines": [
     {
+      "sample": "smart",
+      "usertext": "smart",
       "begin": 0,
-      "end": 2.21,
-      "fluency": 66.061,
+      "end": 1.321,
+      "score": 88.66,
+      "fluency": 91.868,
       "integrity": 100,
-      "pronunciation": 85.984,
-      "sample": "good",
-      "score": 84.988,
-      "usertext": "good",
+      "pronunciation": 88.561,
       "words": [
         {
-          "begin": 0.08,
-          "end": 1.21,
-          "score": 4.139,
-          "text": "sil",
-          "type": 4,
-          "volume": 1
-        },
-        {
           "StressOfWord": 1,
-          "begin": 1.21,
-          "end": 1.76,
-          "score": 8.598,
-          "text": "good",
+          "phonetic": "smɑːt",
+          "text": "smart",
           "type": 2,
-          "volume": 3.755
-        },
-        {
-          "begin": 1.76,
-          "end": 2.21,
-          "score": 3.576,
-          "text": "sil",
-          "type": 4,
-          "volume": 1
+          "begin": 0.411,
+          "end": 1.301,
+          "volume": 7.479,
+          "score": 8.995,
+          "subwords": [
+            {
+              "subtext": "s",
+              "volume": 7.397,
+              "begin": 0.411,
+              "end": 0.541,
+              "score": 8.355
+            },
+            {
+              "subtext": "m",
+              "volume": 9,
+              "begin": 0.541,
+              "end": 0.681,
+              "score": 9.798
+            },
+            {
+              "subtext": "ɑː",
+              "volume": 6.492,
+              "begin": 0.681,
+              "end": 0.921,
+              "score": 9.425
+            },
+            {
+              "subtext": "t",
+              "volume": 7.025,
+              "begin": 0.921,
+              "end": 1.301,
+              "score": 8.937
+            }
+          ]
         }
       ]
     }
-  ],
-  "version": "full 1.0"
+  ]
 }
 ```
