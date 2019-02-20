@@ -182,9 +182,9 @@ private void httpTest() {
 
 > **session-id →sh:1542272221203805792:02055555-f4cd-4fef-8ed8-1a2089056acf**
 
-> 其中，sh是代表地域名称region，1542272221203805792是代表createtime；02055555-f4cd-4fef-8ed8-1a2089056acf 是代表请求中传入的session-id
+> 其中，sh是代表地域名称area，1542272221203805792是代表createtime；02055555-f4cd-4fef-8ed8-1a2089056acf 是代表请求中传入的session-id
 
-> 最后可以根据以上三个信息拼接url，固定字段http://edu.hivoice.cn:9088/WebAudio-1.0-SNAPSHOT/audio/play/{session-id}/{createtime}/{region}
+> 最后可以根据以上三个信息拼接url，固定字段http://edu.hivoice.cn:9088/WebAudio-1.0-SNAPSHOT/audio/play/{session-id}/{createtime}/{area}
 
 > 以上示例，最后拼接的url是http://edu.hivoice.cn:9088/WebAudio-1.0-SNAPSHOT/audio/play/02055555-f4cd-4fef-8ed8-1a2089056acf/1542272221203805792/sh
 
