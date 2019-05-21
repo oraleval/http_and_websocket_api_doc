@@ -41,7 +41,7 @@ POST
 > 小程序等https请求访问：https://cn-edu.hivoice.cn/eval/{audioFormat}   默认端口：443
  
 > 备 注：请求的URL需跟上传的音频格式对应，例如amr格式的音频对应英语评测地址为 http://edu.hivoice.cn:8085/eval/amrnb
-> 可选值：mp3/silk/opus/amrnb
+> 可选值：mp3/silk/opus/amrnb/wxspeex
 ```
 
 ### 3.3 Path Parameters
