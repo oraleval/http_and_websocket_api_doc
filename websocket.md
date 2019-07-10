@@ -210,10 +210,12 @@ Page({
     })
     this.socket.onError(err => {
       console.log("error", err)
+      this.socket.close()
     })
     this.socket.onMessage(res => {
       // 接收服务器响应消息
       console.log("msg", res)
+      this.socket.close()
       if (res.data) {
         try {
           const data = JSON.parse(res.data)
@@ -256,7 +258,7 @@ Page({
         this.socket.send({
           data: this._sid,
           complete: () => {
-            this.socket.close()
+            console.log("send end EOF")
           }
         })
       }
