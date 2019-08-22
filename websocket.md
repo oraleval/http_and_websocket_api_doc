@@ -17,7 +17,7 @@
 ```
 主域名：ws-edu.hivoice.cn
 端口：8081
-请求地址：ws://ws-edu.hivoice.cn:8081/ws/eval/
+请求地址：ws://ws-edu.hivoice.cn:8081/ws/eval/或wss://wss-edu.hivoice.cn:443/ws/eval/
 ```
 
 ### <a name="API"></a>API
@@ -179,7 +179,7 @@ Page({
     this._sid = 'uuid-t' + Date.now()
     //  建立websocket 连接
     this.socket = wx.connectSocket({
-      url: 'ws://ws-edu.hivoice.cn:8081/ws/eval/',
+      url: 'wss://wss-edu.hivoice.cn:443/ws/eval/',
       success(res) {
         console.log('ok', res)
       },
