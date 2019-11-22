@@ -124,7 +124,7 @@
 |  |  |  |
 | ----- | ----- | ----- |
 | 字段 | 含义 | 备注 |
-| result | 评测结果 | |
+| result | 评测结果 |<a href=https://github.com/oraleval/FAQ-Docs/blob/master/Json%20Description.md>Json字段说明</a> |
 | area | 返回实际评测的的机房区域 | |
 | time | 时间戳 | |
 | sid sessionID | 服务端返回的唯一标识 | |
