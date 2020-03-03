@@ -2,7 +2,8 @@
 
 * [时序图](#sequence)
 * [请求地址](#url)
-* [API](#API)
+* [英文API](#EnAPI)
+* [中文API](#CnAPI)
 * [响应接口](#response)
 * [java示例代码](#javademo)
 * [小程序示例代码](#wxdemo)
@@ -14,13 +15,21 @@
 
 ### <a name="URL"></a>请求地址
 
+#### 英文
 ```
 主域名：ws-edu.hivoice.cn
 端口：8081
 请求地址：ws://ws-edu.hivoice.cn:8081/ws/eval/或wss://wss-edu.hivoice.cn:443/ws/eval/
 ```
 
-### <a name="API"></a>API
+#### 中文
+```
+主域名：wscn-edu.hivoice.cn
+端口：18081
+请求地址：ws://wscn-edu.hivoice.cn:18081/ws/eval/
+```
+
+### <a name="EnAPI"></a>英文API
 
 #### 1.普通评测
 ``` json
@@ -94,7 +103,8 @@
 }
 
 ```
-#### 评测请求接口字段说明(关键字不区别大小写)
+
+#### 英文评测请求接口字段说明(关键字不区别大小写)
 
 |  |  |  |  |
 | ----- | ----- | ----- | ----- |
@@ -106,6 +116,39 @@
 | audioFormat | 必填 | 可选值：mp3,speex | 音频格式，音频16K单声道 |
 | eof | 必填 | 设置eof消息包内容 | 客户端需要保证该内容的唯一性，可选用uuid |
 | scoreCoefficient | 可选 | 值范围：0.6-1.9 | 打分系数，调整打分的松紧度，值越大打分越宽松 |
+
+
+### <a name="CnAPI"></a>中文API
+
+#### 1.中文评测
+``` json
+{
+  "EvalType": "sentence",
+  "Language":"cn",
+  "displayText": "你好",
+  "appkey": "联系商务同学获取",
+  "scoreCoefficient": "1",
+  "userID": "",
+  "audioFormat": "mp3",
+  "eof": "gnh-test-end"
+}
+```
+
+
+#### 中文评测请求接口字段说明(关键字不区别大小写)
+
+|  |  |  |  |
+| ----- | ----- | ----- | ----- |
+| 字段 | 是否必选 | 含义 | 备注 |
+| EvalType | 必填 | 可选值为word,sentence,paragraph | ----- |
+| Language | 必填 | 语种，可选值为cn |  |
+| displayText | 必填 | 评测文本 | ----- |
+| appkey | 必填 | 秘钥信息 | ----- |
+| userID | 可选 | 用户id信息 | 建议传入，排查问题方便 |
+| audioFormat | 必填 | 可选值：mp3,speex | 音频格式，音频16K单声道 |
+| eof | 必填 | 设置eof消息包内容 | 客户端需要保证该内容的唯一性，可选用uuid |
+| scoreCoefficient | 可选 | 值范围：0.6-1.9 | 打分系数，调整打分的松紧度，值越大打分越宽松 |
+
 
 ### <a name="response"></a>响应接口
 ``` json
