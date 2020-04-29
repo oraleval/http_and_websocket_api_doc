@@ -258,6 +258,7 @@ Page({
     this.socket.onMessage(res => {
       // 接收服务器响应消息
       console.log("msg", res)
+      // 这里判断是否是最后一个包，如果是则close socket
       this.socket.close()
       if (res.data) {
         try {
