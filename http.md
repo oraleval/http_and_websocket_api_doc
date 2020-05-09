@@ -194,6 +194,8 @@ private void httpTest() {
 
 > 以上示例，最后拼接的url是http://edu.hivoice.cn:9088/WebAudio-1.0-SNAPSHOT/audio/play/02055555-f4cd-4fef-8ed8-1a2089056acf/1542272221203805792/sh
 
+> **如果是https协议**，拼接按照 https://edu.hivoice.cn/WebAudio-1.0-SNAPSHOT/audio/play/{session-id}/{createtime}/{area}
+
 **错误码参照：**<a href=https://github.com/oraleval/ErrorCodeList/wiki/HomePage>错误码说明</a>
 
 **Json字段说明请查找：**<a href=https://github.com/oraleval/FAQ-Docs/blob/master/Json%20Description.md>Json字段说明</a>
