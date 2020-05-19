@@ -5,6 +5,7 @@
 * [英文API](#EnAPI)
 * [中文API](#CnAPI)
 * [响应接口](#response)
+* [拼接评测audio url](#audio)
 * [java示例代码](#javademo)
 * [小程序示例代码](#wxdemo)
 * [错误码列表](#errorcode)
@@ -174,6 +175,24 @@
 | errorcode | 错误码 | |
 | errmsg | 错误消息 | |
 
+### <a name="audio"></a>拼接评测audio url
+
+> 想要获取用户录音结果，则可以根据响应接口数据拼接音频url，获取音频
+
+```
+  "area": "sh",
+  "time": "1551409712576231666",
+  "sid": "f4376e83-7ad0-4635-9812-bec949a2fa27",
+```
+
+> 其中，sh是代表地域名称area，1551409712576231666是代表createtime；f4376e83-7ad0-4635-9812-bec949a2fa27是代表请求中传入的session-id
+
+> 最后可以根据以上三个信息拼接url，固定字段http://edu.hivoice.cn:9088/WebAudio-1.0-SNAPSHOT/audio/play/{session-id}/{createtime}/{area}
+
+> 以上示例，最后拼接的url是http://edu.hivoice.cn:9088/WebAudio-1.0-SNAPSHOT/audio/play/02055555-f4cd-4fef-8ed8-1a2089056acf/1542272221203805792/sh
+
+> **如果是https协议**，拼接按照 https://edu.hivoice.cn/WebAudio-1.0-SNAPSHOT/audio/play/{session-id}/{createtime}/{area}
+
 
 
 ### <a name="javademo"></a>java示例代码
@@ -323,7 +342,7 @@ Page({
 ```
 
 
-### <a name="errorcode"></a> 错误码
+### <a name="errorcode"></a> websocket接口错误码
 
 >| 错误码（十进制） | 错误码（十六进制） | 错误码描述 | 原因 | 处理建议 |
 >| :--- | :--- | :--- | :--- | :--- |
