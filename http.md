@@ -56,7 +56,7 @@ POST
 
   >> 对于silk 格式，微信编译器上的生成的文件是base64编码的，不是silk格式，评测时会报错，需要使用真机生成的silk文件。
   
-  >> 从2019年4月12日开始支持微信公众号的speex格式（16K），请求访问地址是http://edu.hivoice.cn:8085/eval/wxspeex
+  >> 从2019年4月12日开始支持微信公众号的speex格式（16K）
 
 
 ### 3.4 HTTP header attribute
