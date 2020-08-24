@@ -27,7 +27,7 @@
 ```
 主域名：wscn-edu.hivoice.cn
 端口：18081
-请求地址：ws://wscn-edu.hivoice.cn:18081/ws/eval/或wss://wsscn-edu.hivoice.cn/ws/eval
+请求地址：ws://wscn-edu.hivoice.cn:18081/ws/eval/或wss://wsscn-edu.hivoice.cn/ws/eval/
 ```
 
 ### <a name="EnAPI"></a>英文API
