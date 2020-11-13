@@ -202,10 +202,14 @@ https://github.com/unisound-oraleval/websocket-javademo
 ### <a name="wxdemo"></a>小程序示例代码
 #### 小程序调用示例：
 **index.js**
+
+**在每次建立socket时一定要保证上次的socket已经关闭，否则会出现61443 问题**
+
 ```
 // miniprogram/pages/test/index.js
 
 // 调用过程
+// 在每次建立socket时一定要保证上次的socket已经关闭，否则会出现61443 问题
 // 1.建立websocket 连接
 // 2.在连接建立成功后，发送第一个头信息包
 // 3.发送音频buf
